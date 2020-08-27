@@ -7,6 +7,9 @@ html, body {
     margin: 0;
     padding: 0;
 }
+a {
+    text-decoration: none;
+}
 
 /* HEADER */
 header {
@@ -44,7 +47,6 @@ nav {
 .navbar-links li a {
     display: block;
     color: #004c7c;
-    text-decoration: none;
     padding: 2rem;
 }
 
@@ -73,7 +75,6 @@ nav {
     list-style: none;
 }
 .user-links li a {
-    text-decoration: none;
     padding: .2rem;
     color: #9d9d9d;
     
@@ -103,10 +104,12 @@ nav {
 /* PAGE TITLE */
 .page-title {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     height: 182px;
     width: 100%;
     background-color: #edf7f9;
+    line-height: 20px;
 }
 .page-title h1 {
     margin-left: 10%;
@@ -114,6 +117,13 @@ nav {
     letter-spacing: 2px;
     color: #004c7c;
 }
+.page-title h2 {
+    margin-left: 10%;
+    letter-spacing: 2px;
+    color: #004c7c;
+}
+
+/* START OF INDEX */
 .cover {
     background-image: url(./img/cover.jpg);
     height: 500px;
@@ -121,7 +131,6 @@ nav {
     background-size: cover;
     background-position: center;
 }
-/* ARTICLE */
 article {
    margin: 20px 100px;
    color: #9d9d9d;
@@ -163,6 +172,37 @@ article p {
     background-position: bottom;
 }
 
+.another {
+    display: flex;
+    justify-content: center;
+    color: #00b8d9;
+    border: 1px solid #9d9d9d;
+    padding: 1rem;
+    text-transform: uppercase;
+    
+    margin-top: 50px;
+}
+/* END OF INDEX */
+
+/* START OF GOPPL */
+
+.goppl-cover {
+    background-image: url(./img/gocover.jpg);
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.body-image2{
+    background-image: url(./img/image2.jpg);
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-position: bottom;
+}
+.body a {
+    color: #00b8d9;
+}
 
 @media screen and (max-width: 1645px) {
     .navbar-links li a {
